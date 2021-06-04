@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: #f7f7f7;
+    color: #777;
+    font-family: "Myriad Web Pro", Helvetica, Sans-Serif;
+    font-size: .875em;
+    margin: 0px;
+  }
+  
+  .maintext{
+    background-color: #f7f7f7;
+    margin: 0, auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* CONTAINERS */
+  main{
+    margin: auto;
+    max-width: 460px;
+  }
+  section{
+    background: #fff;
+    border-radius: .25em;
+    margin: 1.5em;
+    overflow: hidden;
+  }
+  figure{
+    height: 12.5em;
+  }
+  article{
+    padding: 2em;
+  }
+  
+  /* IMAGE */
+  img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  /* TYPOGRAPHY */
+  h1{
+    font-size: 2em;
+    letter-spacing: -.05em;
+    line-height: 1;
+    margin: .25em 0;
+  }
+
+  h4{
+    color: #bbb;
+  }
+
+  span{
+    color: #bbb;
+    font-size: 12px;
+    text-transform: uppercase;
+    word-spacing: 1px;
+  }
+
+  p.hashtags {
+    color: #bbb;
+    font-size: 12px;
+  }
+
+footer{
+  margin: 0 auto;
+  padding: 5px;
+	text-align: center;
+  background:#b3b2b2;
+  }
+  
+  @supports (display: grid){
+    @media only screen and (min-width: 768px){
+      main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        grid-gap: 24px;
+        max-width: 1150px;
+        padding: 24px;
+      }
+  
+      section{
+        margin: 0;
+      }
+    }
+  }
